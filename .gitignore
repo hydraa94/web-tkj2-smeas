@@ -1,0 +1,46 @@
+# ================ Global ================
+# OS / Editor / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Environment / secret files
+.env
+.env.*.local
+.env.production
+.env.development.local
+.env.test.local
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# ================ Client (front-end) ================
+/client/dist/
+/client/.astro/
+/client/build/
+/client/.cache/
+
+# ================ Server (back-end) ================
+/server/build/
+/server/out/
+/server/.next/
+/server/.cache/
+/server/coverage/
+
+# Misc archives / compressed files
+**/*.zip
+**/*.tar.gz
+**/*.tgz
+
+# Certificates / keys
+*.pem
+*.key
+server/db-web-tkj2-firebase-adminsdk-fbsvc-5ef8994f99.json
+
+# ================ Misc ================
+# Ignores any temporary caches, logs etc
+**/*.tmp
+**/*.bak

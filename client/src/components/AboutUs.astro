@@ -1,0 +1,31 @@
+---
+import { h } from "preact";
+import GridMotion from "./GridMotion.jsx";
+
+const { items = [] } = Astro.props;
+const jsonItems = JSON.stringify(items);
+---
+<div class="relative w-full h-screen overflow-hidden" id="about-us">
+  <div 
+    id="grid-data"
+    data-items={jsonItems}
+  ></div>
+
+  <GridMotion client:load />
+  
+  <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6">
+    <div class="backdrop-blur-sm bg-gray-800/60 border border-blue-600/20 rounded-xl p-8 md:p-10 shadow-xl shadow-white/10 max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white bg-linear-to-r from-purple-600 to-fuchsia-500 bg-clip-text">
+        About Us
+      </h1>
+      <p class="text-lg md:text-xl max-w-2xl text-white/90 leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit molestiae maiores iste esse rem porro nobis aut quisquam ipsa, quibusdam itaque placeat illum eos accusamus corrupti. Blanditiis, ducimus fugit.
+        Aspernatur soluta, est animi eius eveniet tempora dolor in aut mollitia! Aliquam repudiandae voluptatum in ab veritatis, corporis architecto id non labore unde blanditiis nesciunt omnis maxime rerum itaque. Voluptate?
+        Exercitationem illo fugiat minus quis nemo odit voluptatibus facere cum? Sed laborum tempore neque repellendus beatae temporibus magni facilis accusantium dolor, saepe dicta maxime placeat unde natus id voluptate illo?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit molestiae maiores iste esse rem porro nobis aut quisquam ipsa, quibusdam itaque placeat illum eos accusamus corrupti. Blanditiis, ducimus fugit.
+        Aspernatur soluta, est animi eius eveniet tempora dolor in aut mollitia! Aliquam repudiandae voluptatum in ab veritatis, corporis architecto id non labore unde blanditiis nesciunt omnis maxime rerum itaque. Voluptate?
+        Exercitationem illo fugiat minus quis nemo odit voluptatibus facere cum? Sed laborum tempore neque repellendus beatae temporibus magni facilis accusantium dolor, saepe dicta maxime placeat unde natus id voluptate illo?
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+---
+import { h } from "preact";
+---
+
+<div class="w-full overflow-hidden bg-gray-800 py-2 relative">
+  <div class="flex whitespace-nowrap text-yellow-400 font-extrabold text-lg uppercase tracking-wider marquee" data-direction="left">
+    <span class="mx-8">
+      &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // &copy; {new Date().getFullYear()} XI TKJ 2 // WELCOME TO XI TKJ 2 OFFICIAL WEBSITE // ENJOY YOUR VISIT // 
+    </span>
+  </div>
+</div>
+
+<style>
+.marquee {
+  display: flex;
+  width: 200%;
+}
+.marquee > span {
+  flex-shrink: 0;
+  width: 50%;
+}
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee[data-direction="left"] {
+  animation: marquee-left 25s linear infinite;
+}
+</style>

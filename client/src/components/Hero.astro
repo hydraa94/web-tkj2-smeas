@@ -1,0 +1,28 @@
+---
+import { h } from "preact"; // perlu import agar Preact integration aktif
+---
+<section id="home" class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 bg-gray-900 overflow-hidden">
+  <!-- Background image -->
+  <img src="/assets/images/xi-tkj2.jpg" alt="Background"
+       class="absolute top-1/2 left-1/2 w-full h-full object-cover opacity-20 pointer-events-none z-10 -translate-x-1/2 -translate-y-1/2" />
+
+  <!-- Content -->
+  <div class="relative z-20">
+    <h1 class="text-6xl md:text-7xl font-extrabold mb-4
+               bg-linear-to-r from-purple-500 via-cyan-400 to-purple-500
+               bg-clip-text text-transparent">
+      Welcome to
+    </h1>
+    <h1 class="text-6xl md:text-7xl font-extrabold mb-6">
+      <span class="bg-linear-to-r from-purple-500 via-cyan-400 to-cyan-500 bg-clip-text text-transparent">XI </span>
+      <span class="bg-linear-to-r from-yellow-500 via-yellow-300 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,180,0.7)]">TKJ</span>
+      <span class="bg-linear-to-r from-cyan-500 via-cyan-400 to-purple-500 bg-clip-text text-transparent"> 2</span>
+    </h1>
+    <div class="mt-8">
+      <a href="#structure"
+         class="px-6 py-3 bg-violet-400 text-white font-semibold rounded-lg hover:bg-violet-500 transition-colors duration-300">
+        Explore Class
+      </a>
+    </div>
+  </div>
+</section>
